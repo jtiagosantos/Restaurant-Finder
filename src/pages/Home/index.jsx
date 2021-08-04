@@ -7,6 +7,7 @@ import restaurant from '../../assets/restaurante-fake.png';
 
 import { Wrapper, ContainerAside, Search, Logo, Map, CarouselTitle, Carousel } from './styles';
 import { ImageCard as Card } from '../../components/imageCard/index';
+import { RestaurantCard } from '../../components/RestaurantCard/index';
 
 export default function Home() {
     const [inputValue, setInputValue] = useState('');
@@ -45,6 +46,7 @@ export default function Home() {
                         <Card photo={ restaurant } title="Nome do Restaurante" />
                     </Carousel>
                 </Search>
+                <RestaurantCard />
             </ContainerAside>
             <Map></Map>
         </Wrapper>
