@@ -6,11 +6,14 @@ import logo from '../../assets/logo.svg';
 import restaurant from '../../assets/restaurante-fake.png';
 
 import { Wrapper, ContainerAside, Search, Logo, Map, CarouselTitle, Carousel } from './styles';
+
 import { ImageCard as Card } from '../../components/imageCard/index';
 import { RestaurantCard } from '../../components/RestaurantCard/index';
+import { Modal } from '../../components/Modal/index';
 
 export default function Home() {
     const [inputValue, setInputValue] = useState('');
+    const [modalOpened, setModalOpened] = useState(false);
 
     const settings = {
         dots: false,
@@ -48,7 +51,8 @@ export default function Home() {
                 </Search>
                 <RestaurantCard />
             </ContainerAside>
-            <Map></Map>
+            <Map />
+            <Modal open={ modalOpened } onClose={ () => setModalOpened(!modalOpened) } />
         </Wrapper>
     );
 };
