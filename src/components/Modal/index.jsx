@@ -7,7 +7,7 @@ import { Overlay, Dialog } from './styles';
 export function Modal({ children, open, onClose }) {
     useEffect(() => {
         function onEsc(e) {
-            if(e.keyCode == 27) { onClose() }
+            if(e.keyCode === 27) { onClose() }
         };
 
         window.addEventListener('keydown', onEsc);

@@ -25,10 +25,6 @@ export const Logo = styled.img`
     transform: scale(0.8);
 `;
 
-export const Map = styled.div`
-
-`;
-
 export const CarouselTitle = styled.h1`
     font-family: ${ props => props.theme.fonts.regular };
     color: ${ props => props.theme.colors.text };
@@ -39,7 +35,27 @@ export const CarouselTitle = styled.h1`
 `;
 
 export const Carousel = styled(Slider)`
-    .slick-side {
-        margin-right: 16px;
+    .slick-slide {
+        margin: 0 10px;
     }
+`;
+
+export const ModalTitle = styled.p`
+   margin-bottom: 10px;
+   letter-spacing: 0.11px;
+   font-family: ${ props => props.theme.fonts.regular };
+   color: ${ props => props.theme.colors.text };
+   line-height: 29px;
+   font-size: 24px;
+   font-weight: bold; 
+`;
+
+export const ModalContent = styled.p`
+    margin-bottom: 10px;
+    letter-spacing: 0.11px;
+    font-family: ${ props => props.theme.fonts.regular };
+    color: ${ props => props.theme.colors.text };
+    font-weight: normal;
+    line-height: 19px;
+    font-size: 16px;
 `;

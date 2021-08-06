@@ -14,5 +14,6 @@ export const Card = styled.div`
 export const NameRestaurant = styled.span`
     font-family: ${ props => props.theme.fonts.regular };
     color: #fff;
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: bold;
 `;
